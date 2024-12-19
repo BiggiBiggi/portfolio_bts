@@ -3,15 +3,11 @@ import {
   GraduationCap,
   Code,
   Linkedin,
-  Instagram,
   Mail,
-  Download,
-  FileText,
   School,
   ChefHat,
 } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import logo_html from "/app/assets/images/html.png";
 import logo_css from "/app/assets/images/css.png";
 import logo_javascript from "/app/assets/images/javascript.png";
@@ -20,7 +16,7 @@ import logo_nodejs from "/app/assets/images/nodejs.png";
 import logo_php from "/app/assets/images/php.png";
 import logo_mysql from "/app/assets/images/mysql.png";
 import logo_git from "/app/assets/images/git.png";
-import { Button } from "@/components/ui/button";
+import photo from "/app/assets/images/photo.jpg";
 
 export default function Profil() {
   const parcours = [
@@ -64,7 +60,7 @@ export default function Profil() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/3 mb-4 md:mb-0">
               <Image
-                src="/placeholder.svg"
+                src={photo}
                 alt="Portrait"
                 width={200}
                 height={200}
@@ -190,22 +186,13 @@ export default function Profil() {
           <h2 className="text-2xl font-semibold mb-4">Contactez-moi</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <a
-              href="https://www.linkedin.com/in/votre-profil"
+              href="https://www.linkedin.com/in/benjamin-freland-23139527a/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center text-blue-600 hover:text-blue-800"
             >
               <Linkedin className="h-6 w-6 mr-2" />
               <span>LinkedIn</span>
-            </a>
-            <a
-              href="https://www.instagram.com/votre-profil"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center text-pink-600 hover:text-pink-800"
-            >
-              <Instagram className="h-6 w-6 mr-2" />
-              <span>Instagram</span>
             </a>
             <a
               href="mailto:votre-email@example.com"
@@ -215,21 +202,6 @@ export default function Profil() {
               <span>votre-email@example.com</span>
             </a>
           </div>
-        </div>
-
-        <div className="flex justify-center space-x-4">
-          <Button asChild>
-            <Link href="/mon-cv.pdf" download>
-              <Download className="mr-2 h-5 w-5" />
-              Télécharger mon CV
-            </Link>
-          </Button>
-          <Button asChild variant="outline">
-            <Link href="/tableau-synthese.pdf" download>
-              <FileText className="mr-2 h-5 w-5" />
-              Tableau de synthèse
-            </Link>
-          </Button>
         </div>
       </div>
     </main>

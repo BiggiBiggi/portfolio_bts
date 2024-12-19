@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export function MainNav() {
-  const pathname = usePathname()
-  
+  const pathname = usePathname();
+
   const routes = [
     {
       href: "/",
@@ -37,14 +37,14 @@ export function MainNav() {
       label: "Contact",
       active: pathname === "/contact",
     },
-  ]
+  ];
 
   return (
     <header className="fixed top-0 w-full z-50 bg-white shadow-md">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-blue-600 text-2xl font-bold">
-            MonPortfolio
+            FRELAND Benjamin
           </Link>
           <div className="hidden md:flex items-center space-x-6">
             {routes.map((route) => (
@@ -62,6 +62,5 @@ export function MainNav() {
         </div>
       </nav>
     </header>
-  )
+  );
 }
-
