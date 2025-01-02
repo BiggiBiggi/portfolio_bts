@@ -11,6 +11,7 @@ import windows from "/app/assets/images/windows.png";
 import powershell from "/app/assets/images/powershell.png";
 import sql from "/app/assets/images/sql.png";
 import expo_go from "/app/assets/images/expo_go.png";
+import powerOps from "/app/assets/images/powerOps.png";
 import react_native from "/app/assets/images/react_native.png";
 import react from "/app/assets/images/react.png";
 import nodejs from "/app/assets/images/nodejs.png";
@@ -48,7 +49,7 @@ const ProjectCard = ({
           <div className="flex items-center">
             <Image
               src={logoSrc}
-              alt={`${title} logo`}
+              alt={`Logo de ${title}`}
               width={64}
               height={64}
               className="mr-4"
@@ -178,6 +179,7 @@ export default function Projets() {
         <ProjectCard
           title="PowerOPS"
           description="Scripts PowerShell pour l'automatisation de la préparation des postes de travail"
+          logoSrc={powerOps}
           techLogos={[
             { name: "PowerShell", src: powershell },
             { name: "Windows", src: windows },
