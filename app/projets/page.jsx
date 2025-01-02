@@ -15,7 +15,6 @@ import react_native from "/app/assets/images/react_native.png";
 import react from "/app/assets/images/react.png";
 import nodejs from "/app/assets/images/nodejs.png";
 import mysql from "/app/assets/images/mysql.png";
-import powerOps from "/app/assets/images/powerOps.png";
 import mapSys from "/app/assets/images/mapsys.png";
 import {
   Card,
@@ -185,7 +184,6 @@ export default function Projets() {
         <ProjectCard
           title="PowerOPS"
           description="Scripts PowerShell pour l'automatisation de la préparation des postes de travail"
-          logoSrc={powerOps}
           techLogos={[
             { name: "PowerShell", src: powershell },
             { name: "Windows", src: windows },
