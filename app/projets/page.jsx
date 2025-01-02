@@ -275,8 +275,8 @@ export default function Projets() {
                   informatiques sur un plan précis de la base
                 </li>
                 <li>
-                  Localisation en temps réel des ordinateurs, imprimantes,
-                  antennes WiFi, et autres matériels IT
+                  Emplacement des ordinateurs, imprimantes, antennes WiFi, et
+                  autres matériels IT
                 </li>
                 <li>
                   Distinction visuelle entre le matériel de support et le

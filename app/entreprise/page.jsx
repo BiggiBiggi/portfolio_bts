@@ -62,9 +62,10 @@ export default function Entreprise() {
           <p className="mb-4">
             Située à Castets dans les Landes, cette base bénéficie d&apos;une
             position géographique avantageuse pour desservir efficacement le
-            Sud-Ouest de la France et au-delà. Elle emploie plusieurs centaines
-            de collaborateurs et utilise des technologies de pointe en matière
-            de logistique et de gestion des stocks.
+            Sud-Ouest de la France. Elle emploie plusieurs centaines de
+            collaborateurs environ 400 en basse saison et 600 en haute saison et
+            utilise des technologies de pointe en matière de logistique et de
+            gestion des stocks.
           </p>
           <p>
             En tant qu&apos;alternant au sein de cette structure, j&apos;ai
