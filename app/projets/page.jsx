@@ -11,7 +11,7 @@ import windows from "/app/assets/images/windows.png";
 import powershell from "/app/assets/images/powershell.png";
 import sql from "/app/assets/images/sql.png";
 import expo_go from "/app/assets/images/expo_go.png";
-import powerOps from "/app/assets/images/powerOps.png";
+import powerOps from "/app/assets/images/powerOps.jpg";
 import react_native from "/app/assets/images/react_native.png";
 import react from "/app/assets/images/react.png";
 import nodejs from "/app/assets/images/nodejs.png";
