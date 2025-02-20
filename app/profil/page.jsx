@@ -8,15 +8,15 @@ import {
   ChefHat,
 } from "lucide-react";
 import Image from "next/image";
-import logo_html from "/app/assets/images/html.png";
-import logo_css from "/app/assets/images/css.png";
-import logo_javascript from "/app/assets/images/javascript.png";
-import logo_react from "/app/assets/images/react.png";
-import logo_nodejs from "/app/assets/images/nodejs.png";
-import logo_php from "/app/assets/images/php.png";
-import logo_mysql from "/app/assets/images/mysql.png";
-import logo_git from "/app/assets/images/git.png";
-import photo from "/app/assets/images/photo.jpg";
+const logo_html = "/images/html.png";
+const logo_css = "/images/css.png";
+const logo_javascript = "/images/javascript.png";
+const logo_react = "/images/react.png";
+const logo_nodejs = "/images/nodejs.png";
+const logo_php = "/images/php.png";
+const logo_mysql = "/images/mysql.png";
+const logo_git = "/images/git.png";
+const photo = "/images/photo.jpg";
 
 export default function Profil() {
   const parcours = [

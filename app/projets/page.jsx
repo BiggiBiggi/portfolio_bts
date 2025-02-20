@@ -5,18 +5,18 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import txek from "/app/assets/images/txek.png";
-import wampserver from "/app/assets/images/wampserver.png";
-import windows from "/app/assets/images/windows.png";
-import powershell from "/app/assets/images/powershell.png";
-import sql from "/app/assets/images/sql.png";
-import expo_go from "/app/assets/images/expo_go.png";
-import powerOps from "/app/assets/images/powerOps.jpg";
-import react_native from "/app/assets/images/react_native.png";
-import react from "/app/assets/images/react.png";
-import nodejs from "/app/assets/images/nodejs.png";
-import mysql from "/app/assets/images/mysql.png";
-import mapSys from "/app/assets/images/mapsys.png";
+const txek = "/images/txek.png";
+const wampserver = "/images/wampserver.png";
+const windows = "/images/windows.png";
+const powershell = "/images/powershell.png";
+const sql = "/images/sql.png";
+const expo_go = "/images/expo_go.png";
+const powerOps = "/images/powerOps.jpg";
+const react_native = "/images/react_native.png";
+const react = "/images/react.png";
+const nodejs = "/images/nodejs.png";
+const mysql = "/images/mysql.png";
+const mapSys = "/images/mapsys.png";
 import {
   Card,
   CardContent,

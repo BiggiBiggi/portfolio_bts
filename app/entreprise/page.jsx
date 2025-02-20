@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import logo from "/app/assets/images/logo_mousquetaires.svg";
+const logo = "/images/logo_mousquetaires.svg";
 
 export default function Entreprise() {
   return (
