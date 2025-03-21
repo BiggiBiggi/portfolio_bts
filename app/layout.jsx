@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <MainNav />
         <div className="flex-1 pt-16">{children}</div>
         <footer className="bg-gray-800 text-white py-4 text-center w-full">
-          <p>&copy; 2024 FRELAND Benjamin. Tous droits réservés.</p>
+          <p>&copy; 2025 FRELAND Benjamin. Tous droits réservés.</p>
         </footer>
       </body>
     </html>
