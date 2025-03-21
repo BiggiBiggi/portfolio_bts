@@ -29,7 +29,7 @@ export default function Home() {
                   variant="outline"
                   className="bg-transparent border-white text-white hover:bg-white hover:text-blue-600"
                 >
-                  <Link href="/mon-cv.pdf" download>
+                  <Link target="_blank" href="/cv.pdf" download>
                     <Download className="mr-2 h-5 w-5" />
                     Télécharger mon CV
                   </Link>
@@ -39,7 +39,7 @@ export default function Home() {
                   variant="outline"
                   className="bg-transparent border-white text-white hover:bg-white hover:text-blue-600"
                 >
-                  <Link href="/tableau-synthese.pdf" download>
+                  <Link target="_blank" href="/tableau_synthese.pdf" download>
                     <FileText className="mr-2 h-5 w-5" />
                     Tableau de synthèse
                   </Link>

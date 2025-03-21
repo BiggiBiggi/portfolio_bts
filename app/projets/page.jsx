@@ -114,145 +114,6 @@ export default function Projets() {
     <main className="pt-24 pb-16">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8">Mes Projets</h1>
-
-        <ProjectCard
-          title="Application Txek Score"
-          description="Application mobile pour le comptage des points du jeu de cartes Txek"
-          logoSrc={txek}
-          techLogos={[
-            {
-              name: "React Native",
-              src: react_native,
-            },
-            { name: "Expo", src: expo_go },
-            { name: "Node.js", src: nodejs },
-            { name: "SQL", src: sql },
-          ]}
-          summary="Application mobile développée avec React Native et Expo Go pour faciliter le comptage des points lors des parties de Txek, un jeu de cartes populaire."
-          details={
-            <div className="mt-4">
-              <h3 className="text-lg font-semibold mb-2">
-                Fonctionnalités détaillées :
-              </h3>
-              <ul className="list-disc list-inside mb-4">
-                <li>
-                  Comptage précis des points pour chaque manche du jeu Txek
-                </li>
-                <li>
-                  Affichage d&apos;un tableau des scores détaillé à la fin de
-                  chaque partie
-                </li>
-                <li>
-                  Historique complet des parties jouées avec possibilité de les
-                  revoir
-                </li>
-                <li>Option de reprise des parties non terminées</li>
-                <li>
-                  Interface utilisateur intuitive et adaptée aux appareils
-                  mobiles
-                </li>
-              </ul>
-              <h3 className="text-lg font-semibold mb-2">Défis techniques :</h3>
-              <p className="mb-4">
-                Le développement de cette application a nécessité une gestion
-                efficace de l&apos;état local et global pour assurer la
-                persistance des données entre les sessions de jeu.
-                L&apos;utilisation d&apos;AsyncStorage a permis de sauvegarder
-                les parties en cours sur l&apos;appareil de l&apos;utilisateur.
-              </p>
-              <h3 className="text-lg font-semibold mb-2">
-                Impact et apprentissages :
-              </h3>
-              <p>
-                Ce projet m&apos;a permis d&apos;approfondir mes compétences en
-                développement mobile avec React Native, en gestion d&apos;état,
-                et en conception d&apos;interfaces utilisateur pour les
-                applications de jeu. J&apos;ai également acquis de
-                l&apos;expérience dans l&apos;intégration d&apos;un backend
-                Node.js avec une base de données SQL pour la gestion des données
-                utilisateur et des statistiques de jeu.
-              </p>
-            </div>
-          }
-        />
-
-        <ProjectCard
-          title="PowerOPS"
-          description="Scripts PowerShell pour l'automatisation de la préparation des postes de travail"
-          logoSrc={txek}
-          techLogos={[
-            { name: "PowerShell", src: powershell },
-            { name: "Windows", src: windows },
-          ]}
-          summary="Ensemble de scripts PowerShell développés pour automatiser et standardiser la préparation des postes de travail pour les nouveaux collaborateurs chez ITM LAI Castets."
-          details={
-            <div className="mt-4">
-              <h3 className="text-lg font-semibold mb-2">
-                Fonctionnalités clés :
-              </h3>
-              <ul className="list-disc list-inside mb-4">
-                <li>
-                  Installation automatisée des applications nécessaires selon le
-                  profil de l&apos;utilisateur
-                </li>
-                <li>
-                  Configuration précise des droits d&apos;accès et des
-                  paramètres de sécurité
-                </li>
-                <li>
-                  Personnalisation des paramètres système en fonction des
-                  besoins spécifiques de chaque service
-                </li>
-                <li>
-                  Intégration transparente au domaine de l&apos;entreprise
-                </li>
-                <li>
-                  Génération de rapports détaillés sur le processus de
-                  configuration
-                </li>
-              </ul>
-              <h3 className="text-lg font-semibold mb-2">
-                Impact sur l&apos;entreprise :
-              </h3>
-              <p className="mb-4">
-                La mise en place de PowerOPS a considérablement amélioré
-                l&apos;efficacité du service IT :
-              </p>
-              <ul className="list-disc list-inside mb-4">
-                <li>
-                  Réduction du temps de préparation des postes de travail de
-                  plusieurs heures à moins d&apos;une heure
-                </li>
-                <li>
-                  Standardisation complète de la configuration, réduisant les
-                  erreurs et les problèmes de compatibilité
-                </li>
-                <li>
-                  Amélioration significative de la productivité du service IT,
-                  permettant de se concentrer sur des tâches à plus haute valeur
-                  ajoutée
-                </li>
-                <li>
-                  Expérience d&apos;intégration plus fluide pour les nouveaux
-                  employés, avec des postes de travail prêts à l&apos;emploi dès
-                  leur arrivée
-                </li>
-              </ul>
-              <h3 className="text-lg font-semibold mb-2">
-                Compétences développées :
-              </h3>
-              <p>
-                Ce projet m&apos;a permis de perfectionner mes compétences en
-                scripting PowerShell, en automatisation des tâches système, et
-                en gestion des environnements Windows en entreprise. J&apos;ai
-                également acquis une compréhension approfondie des enjeux de
-                sécurité et de conformité liés à la configuration des postes de
-                travail en environnement professionnel.
-              </p>
-            </div>
-          }
-        />
-
         <ProjectCard
           title="MapSys"
           description="Plan interactif de la base de Castets pour la visualisation de l'infrastructure informatique"
@@ -263,7 +124,7 @@ export default function Projets() {
             { name: "MySQL", src: mysql },
             { name: "WampServer", src: wampserver },
           ]}
-          summary="Application web interactive offrant une visualisation complète et en temps réel de l'infrastructure informatique de la base de Castets, facilitant la gestion et la maintenance du parc informatique."
+          summary="Application web serveur interactive offrant une visualisation complète et en temps réel de l'infrastructure informatique de la base de Castets, facilitant la gestion et la maintenance du parc informatique."
           details={
             <div className="mt-4">
               <h3 className="text-lg font-semibold mb-2">
@@ -346,6 +207,144 @@ export default function Projets() {
                 en conception d&apos;interfaces utilisateur complexes. J&apos;ai
                 également acquis une compréhension approfondie des enjeux liés à
                 la gestion d&apos;une infrastructure IT à grande échelle.
+              </p>
+            </div>
+          }
+        />
+
+        <ProjectCard
+          title="PowerOPS"
+          description="Scripts PowerShell pour l'automatisation de la préparation des postes de travail"
+          logoSrc={powershell}
+          techLogos={[
+            { name: "PowerShell", src: powershell },
+            { name: "Windows", src: windows },
+          ]}
+          summary="Ensemble de scripts PowerShell développés pour automatiser et standardiser la préparation des postes de travail pour les nouveaux collaborateurs chez ITM LAI Castets."
+          details={
+            <div className="mt-4">
+              <h3 className="text-lg font-semibold mb-2">
+                Fonctionnalités clés :
+              </h3>
+              <ul className="list-disc list-inside mb-4">
+                <li>
+                  Installation automatisée des applications nécessaires selon le
+                  profil de l&apos;utilisateur
+                </li>
+                <li>
+                  Configuration précise des droits d&apos;accès et des
+                  paramètres de sécurité
+                </li>
+                <li>
+                  Personnalisation des paramètres système en fonction des
+                  besoins spécifiques de chaque service
+                </li>
+                <li>
+                  Intégration transparente au domaine de l&apos;entreprise
+                </li>
+                <li>
+                  Génération de rapports détaillés sur le processus de
+                  configuration
+                </li>
+              </ul>
+              <h3 className="text-lg font-semibold mb-2">
+                Impact sur l&apos;entreprise :
+              </h3>
+              <p className="mb-4">
+                La mise en place de PowerOPS a considérablement amélioré
+                l&apos;efficacité du service IT :
+              </p>
+              <ul className="list-disc list-inside mb-4">
+                <li>
+                  Réduction du temps de préparation des postes de travail de
+                  plusieurs heures à moins d&apos;une heure
+                </li>
+                <li>
+                  Standardisation complète de la configuration, réduisant les
+                  erreurs et les problèmes de compatibilité
+                </li>
+                <li>
+                  Amélioration significative de la productivité du service IT,
+                  permettant de se concentrer sur des tâches à plus haute valeur
+                  ajoutée
+                </li>
+                <li>
+                  Expérience d&apos;intégration plus fluide pour les nouveaux
+                  employés, avec des postes de travail prêts à l&apos;emploi dès
+                  leur arrivée
+                </li>
+              </ul>
+              <h3 className="text-lg font-semibold mb-2">
+                Compétences développées :
+              </h3>
+              <p>
+                Ce projet m&apos;a permis de perfectionner mes compétences en
+                scripting PowerShell, en automatisation des tâches système, et
+                en gestion des environnements Windows en entreprise. J&apos;ai
+                également acquis une compréhension approfondie des enjeux de
+                sécurité et de conformité liés à la configuration des postes de
+                travail en environnement professionnel.
+              </p>
+            </div>
+          }
+        />
+
+        <ProjectCard
+          title="Application Txek Score"
+          description="Application mobile pour le comptage des points du jeu de cartes Txek"
+          logoSrc={txek}
+          techLogos={[
+            {
+              name: "React Native",
+              src: react_native,
+            },
+            { name: "Expo", src: expo_go },
+            { name: "Node.js", src: nodejs },
+            { name: "SQL", src: sql },
+          ]}
+          summary="Application mobile développée avec React Native et Expo Go pour faciliter le comptage des points lors des parties de Txek, un jeu de cartes populaire."
+          details={
+            <div className="mt-4">
+              <h3 className="text-lg font-semibold mb-2">
+                Fonctionnalités détaillées :
+              </h3>
+              <ul className="list-disc list-inside mb-4">
+                <li>
+                  Comptage précis des points pour chaque manche du jeu Txek
+                </li>
+                <li>
+                  Affichage d&apos;un tableau des scores détaillé à la fin de
+                  chaque partie
+                </li>
+                <li>
+                  Historique complet des parties jouées avec possibilité de les
+                  revoir
+                </li>
+                <li>Option de reprise des parties non terminées</li>
+                <li>
+                  Interface utilisateur intuitive et adaptée aux appareils
+                  mobiles
+                </li>
+              </ul>
+              <h3 className="text-lg font-semibold mb-2">Défis techniques :</h3>
+              <p className="mb-4">
+                Le développement de cette application a nécessité une gestion
+                efficace de l&apos;état local et global pour assurer la
+                persistance des données entre les sessions de jeu.
+                L&apos;utilisation d&apos;AsyncStorage a permis de sauvegarder
+                les parties en cours sur l&apos;appareil de l&apos;utilisateur.
+              </p>
+              <h3 className="text-lg font-semibold mb-2">
+                Impact et apprentissages :
+              </h3>
+              <p>
+                Ce projet m&apos;a permis d&apos;approfondir mes compétences en
+                développement mobile avec React Native, en gestion d&apos;état,
+                et en conception d&apos;interfaces utilisateur pour les
+                applications de jeu. J&apos;ai également acquis de
+                l&apos;expérience dans l&apos;intégration d&apos;un backend
+                Node.js avec une base de données SQL pour la gestion des données
+                utilisateur et des statistiques de jeu.
               </p>
             </div>
           }
