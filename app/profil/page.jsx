@@ -8,15 +8,15 @@ import {
   ChefHat,
 } from "lucide-react";
 import Image from "next/image";
-const logo_html = "/images/html.png";
-const logo_css = "/images/css.png";
-const logo_javascript = "/images/javascript.png";
-const logo_react = "/images/react.png";
-const logo_nodejs = "/images/nodejs.png";
-const logo_php = "/images/php.png";
-const logo_mysql = "/images/mysql.png";
-const logo_git = "/images/git.png";
-const photo = "/images/photo.jpg";
+import logo_html from "../assets/images/html.png";
+import logo_css from "../assets/images/css.png";
+import logo_javascript from "../assets/images/javascript.png";
+import logo_react from "../assets/images/react.png";
+import logo_nodejs from "../assets/images/nodejs.png";
+import logo_php from "../assets/images/php.png";
+import logo_mysql from "../assets/images/mysql.png";
+import logo_git from "../assets/images/git.png";
+import photo from "../assets/images/photo.jpg";
 
 export default function Profil() {
   const parcours = [
@@ -195,11 +195,11 @@ export default function Profil() {
               <span>LinkedIn</span>
             </a>
             <a
-              href="mailto:votre-email@example.com"
+              href="mailto:frelandbenjamin99@gmail.com"
               className="flex items-center text-red-600 hover:text-red-800"
             >
               <Mail className="h-6 w-6 mr-2" />
-              <span>votre-email@example.com</span>
+              <span>Mail</span>
             </a>
           </div>
         </div>
