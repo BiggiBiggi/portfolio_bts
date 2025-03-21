@@ -28,13 +28,12 @@ export default function Contact() {
               </div>
             </Link>
             <Link
-              href="mailto:votre-email@example.com"
+              href="mailto:frelandbenjamin99@gmail.com"
               className="flex items-center p-4 bg-green-100 rounded-lg hover:bg-green-200 transition-colors"
             >
               <Mail className="h-8 w-8 text-green-600 mr-3" />
               <div>
                 <h2 className="font-semibold text-lg">Email</h2>
-                <p className="text-sm text-gray-600">votre-email@example.com</p>
               </div>
             </Link>
           </div>
