@@ -195,7 +195,7 @@ export default function Profil() {
               <span>LinkedIn</span>
             </a>
             <a
-              href="mailto:frelandbenjamin99@gmail.com"
+              href="mailto:benjamin.freland.pro@gmail.com"
               className="flex items-center text-red-600 hover:text-red-800"
             >
               <Mail className="h-6 w-6 mr-2" />
