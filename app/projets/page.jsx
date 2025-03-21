@@ -3,7 +3,20 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import txek from "../assets/images/txek.png";
+import wampserver from "../assets/images/wampserver.png";
+import windows from "../assets/images/windows.png";
+import powershell from "../assets/images/powershell.png";
+import sql from "../assets/images/sql.png";
+import expo_go from "../assets/images/expo_go.png";
+import powerOps from "../assets/images/powerOps.png";
+import react_native from "../assets/images/react_native.png";
+import react from "../assets/images/react.png";
+import nodejs from "../assets/images/nodejs.png";
+import mysql from "../assets/images/mysql.png";
+import mapSys from "../assets/images/mapsys.png";
 import {
   Card,
   CardContent,
@@ -12,21 +25,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-// Remplacer le composant TechLogo pour utiliser img au lieu de Image
 const TechLogo = ({ name, src }) => (
   <div className="flex flex-col items-center mr-4 mb-4">
-    <img
-      src={src || "/placeholder.svg"}
-      alt={name}
-      width={40}
-      height={40}
-      className="mb-2"
-    />
+    <Image src={src} alt={` `} width={40} height={40} className="mb-2" />
     <span className="text-xs text-center">{name}</span>
   </div>
 );
 
-// Modifier ProjectCard pour utiliser img au lieu de Image
 const ProjectCard = ({
   title,
   description,
@@ -42,8 +47,8 @@ const ProjectCard = ({
       <CardHeader>
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img
-              src={logoSrc || "/placeholder.svg"}
+            <Image
+              src={logoSrc}
               alt={`Logo de ${title}`}
               width={64}
               height={64}
@@ -105,20 +110,6 @@ const ProjectCard = ({
 };
 
 export default function Projets() {
-  // Définir les chemins d'images directement
-  const txekPath = "/assets/images/txek.png";
-  const wampserverPath = "/assets/images/wampserver.png";
-  const windowsPath = "/assets/images/windows.png";
-  const powershellPath = "/assets/images/powershell.png";
-  const sqlPath = "/assets/images/sql.png";
-  const expo_goPath = "/assets/images/expo_go.png";
-  const powerOpsPath = "/assets/images/powerOps.png";
-  const react_nativePath = "/assets/images/react_native.png";
-  const reactPath = "/assets/images/react.png";
-  const nodejsPath = "/assets/images/nodejs.png";
-  const mysqlPath = "/assets/images/mysql.png";
-  const mapSysPath = "/assets/images/mapsys.png";
-
   return (
     <main className="pt-24 pb-16">
       <div className="container mx-auto px-4">
@@ -127,15 +118,15 @@ export default function Projets() {
         <ProjectCard
           title="Application Txek Score"
           description="Application mobile pour le comptage des points du jeu de cartes Txek"
-          logoSrc={txekPath}
+          logoSrc={txek}
           techLogos={[
             {
               name: "React Native",
-              src: react_nativePath,
+              src: react_native,
             },
-            { name: "Expo", src: expo_goPath },
-            { name: "Node.js", src: nodejsPath },
-            { name: "SQL", src: sqlPath },
+            { name: "Expo", src: expo_go },
+            { name: "Node.js", src: nodejs },
+            { name: "SQL", src: sql },
           ]}
           summary="Application mobile développée avec React Native et Expo Go pour faciliter le comptage des points lors des parties de Txek, un jeu de cartes populaire."
           details={
@@ -188,10 +179,10 @@ export default function Projets() {
         <ProjectCard
           title="PowerOPS"
           description="Scripts PowerShell pour l'automatisation de la préparation des postes de travail"
-          logoSrc={powerOpsPath}
+          logoSrc={powerOps}
           techLogos={[
-            { name: "PowerShell", src: powershellPath },
-            { name: "Windows", src: windowsPath },
+            { name: "PowerShell", src: powershell },
+            { name: "Windows", src: windows },
           ]}
           summary="Ensemble de scripts PowerShell développés pour automatiser et standardiser la préparation des postes de travail pour les nouveaux collaborateurs chez ITM LAI Castets."
           details={
@@ -265,12 +256,12 @@ export default function Projets() {
         <ProjectCard
           title="MapSys"
           description="Plan interactif de la base de Castets pour la visualisation de l'infrastructure informatique"
-          logoSrc={mapSysPath}
+          logoSrc={mapSys}
           techLogos={[
-            { name: "React", src: reactPath },
-            { name: "Node.js", src: nodejsPath },
-            { name: "MySQL", src: mysqlPath },
-            { name: "WampServer", src: wampserverPath },
+            { name: "React", src: react },
+            { name: "Node.js", src: nodejs },
+            { name: "MySQL", src: mysql },
+            { name: "WampServer", src: wampserver },
           ]}
           summary="Application web interactive offrant une visualisation complète et en temps réel de l'infrastructure informatique de la base de Castets, facilitant la gestion et la maintenance du parc informatique."
           details={
