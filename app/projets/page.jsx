@@ -27,7 +27,14 @@ import {
 
 const TechLogo = ({ name, src }) => (
   <div className="flex flex-col items-center mr-4 mb-4">
-    <Image src={src} alt={` `} width={40} height={40} className="mb-2" />
+    <Image
+      src={src}
+      alt={` `}
+      width={40}
+      height={40}
+      className="mb-2"
+      unoptimized
+    />
     <span className="text-xs text-center">{name}</span>
   </div>
 );
