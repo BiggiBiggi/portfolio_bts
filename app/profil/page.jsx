@@ -115,7 +115,7 @@ export default function Profil() {
             Solutions Logicielles et Applications Métiers (SLAM) est une
             formation de deux ans que je suis actuellement à l&apos;
             <a
-              href="https://www.esnl.fr"
+              href="https://esnl.campuslandes.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
