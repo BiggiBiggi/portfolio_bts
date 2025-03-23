@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { ArrowRight, Download, FileText } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+// import { Download, FileText } from "lucide-react";
+// import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
