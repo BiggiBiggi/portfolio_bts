@@ -24,7 +24,7 @@ export default function Home() {
                   Découvrir mon profil
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-                <Button
+                {/* <Button
                   asChild
                   variant="outline"
                   className="bg-transparent border-white text-white hover:bg-white hover:text-blue-600"
@@ -43,7 +43,7 @@ export default function Home() {
                     <FileText className="mr-2 h-5 w-5" />
                     Tableau de synthèse
                   </Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
