@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-// import { Download, FileText } from "lucide-react";
-// import { Button } from "@/components/ui/button";
+import { Download, FileText } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
                   Découvrir mon profil
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-                {/* <Button
+                <Button
                   asChild
                   variant="outline"
                   className="bg-transparent border-white text-white hover:bg-white hover:text-blue-600"
@@ -44,7 +44,7 @@ export default function Home() {
                     <FileText className="mr-2 h-5 w-5" />
                     Tableau de synthèse
                   </Link>
-                </Button> */}
+                </Button>
               </div>
             </div>
           </div>

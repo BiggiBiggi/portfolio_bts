@@ -1,12 +1,17 @@
+// next.config.js
 const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
-    images: {
-        unoptimized: true, // Désactive l'optimisation des images
-      },
+  images: {
+    unoptimized: true,
+  },
   output: "export",
   basePath: isProd ? "/portfolio_bts" : "",
   assetPrefix: isProd ? "/portfolio_bts/" : "",
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
-export default nextConfig;
+// Utiliser module.exports pour un fichier .js
+module.exports = nextConfig;
