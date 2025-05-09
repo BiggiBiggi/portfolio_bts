@@ -17,6 +17,7 @@ import logo_php from "../assets/images/php.png";
 import logo_mysql from "../assets/images/mysql.png";
 import logo_git from "../assets/images/git.png";
 import photo from "../assets/images/photo.jpg";
+import { link } from "fs";
 
 export default function Profil() {
   const parcours = [
@@ -41,14 +42,30 @@ export default function Profil() {
   ];
 
   const competences = [
-    { name: "HTML", logo: logo_html },
-    { name: "CSS", logo: logo_css },
-    { name: "JavaScript", logo: logo_javascript },
-    { name: "React", logo: logo_react },
-    { name: "Node.js", logo: logo_nodejs },
-    { name: "PHP", logo: logo_php },
-    { name: "MySQL", logo: logo_mysql },
-    { name: "Git", logo: logo_git },
+    {
+      name: "HTML",
+      logo: logo_html,
+      link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    },
+    {
+      name: "CSS",
+      logo: logo_css,
+      link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    },
+    {
+      name: "JavaScript",
+      logo: logo_javascript,
+      link: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
+    },
+    { name: "React", logo: logo_react, link: "https://react.dev/" },
+    {
+      name: "Node.js",
+      logo: logo_nodejs,
+      link: "https://nodejs.org/docs/latest/api/",
+    },
+    { name: "PHP", logo: logo_php, link: "https://www.php.net/docs.php" },
+    { name: "MySQL", logo: logo_mysql, link: "https://dev.mysql.com/doc/" },
+    { name: "Git", logo: logo_git, link: "https://git-scm.com/doc" },
   ];
 
   return (
@@ -169,14 +186,21 @@ export default function Profil() {
                 key={skill.name}
                 className="bg-gray-100 rounded-lg p-4 text-center hover:shadow-md transition-shadow flex flex-col items-center justify-center"
               >
-                <Image
-                  src={skill.logo}
-                  alt={`Logo ${skill.name}`}
-                  width={64}
-                  height={64}
-                  className="mb-2"
-                />
-                <p className="font-medium">{skill.name}</p>
+                <a
+                  href={skill.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block h-full"
+                >
+                  <Image
+                    src={skill.logo}
+                    alt={`Logo ${skill.name}`}
+                    width={64}
+                    height={64}
+                    className="mb-2"
+                  />
+                  <p className="font-medium">{skill.name}</p>
+                </a>
               </div>
             ))}
           </div>
