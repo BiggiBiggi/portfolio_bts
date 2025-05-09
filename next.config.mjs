@@ -1,4 +1,3 @@
-// next.config.js
 const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
@@ -11,7 +10,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // Autres options si nécessaire
 };
 
-// Utiliser module.exports pour un fichier .js
-module.exports = nextConfig;
+export default nextConfig;
